@@ -40,9 +40,6 @@ Buat database dan pengguna MySQL:
 
 ```sql
 CREATE DATABASE e_rapor_tpq DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-CREATE USER 'erapor'@'localhost' IDENTIFIED BY 'password-anda';
-GRANT ALL PRIVILEGES ON e_rapor_tpq.* TO 'erapor'@'localhost';
-FLUSH PRIVILEGES;
 ```
 
 ### 2. Backend
