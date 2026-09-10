@@ -1,0 +1,14 @@
+# Dependensi & hasil build
+node_modules/
+dist/
+build/
+
+# Kredensial lingkungan
+.env
+backend/.env
+frontend/.env
+
+# Log & cache
+*.log
+.DS_Store
+.cache/

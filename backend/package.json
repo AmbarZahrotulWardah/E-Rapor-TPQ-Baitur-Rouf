@@ -1,0 +1,45 @@
+{
+  "name": "e-rapor-tpq-backend",
+  "version": "1.0.0",
+  "description": "Backend REST API Sistem E-Rapor Digital TPQ Baitur Rouf Surabaya - metode Simple Additive Weighting (SAW)",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "db:migrate": "node scripts/migrate.js",
+    "db:seed": "node seeders/001-seed-demo.js",
+    "db:reset": "node scripts/migrate.js --drop && node seeders/001-seed-demo.js",
+    "test": "node --test tests/unit/",
+    "test:unit": "node --test tests/unit/",
+    "test:blackbox": "node --test tests/blackbox/"
+  },
+  "keywords": [
+    "e-rapor",
+    "tpq",
+    "saw",
+    "simple-additive-weighting",
+    "express",
+    "mysql"
+  ],
+  "author": "Ambar Zahrotul Wardah",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.1",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.11.5",
+    "pdfkit": "^0.15.1",
+    "sequelize": "^6.37.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

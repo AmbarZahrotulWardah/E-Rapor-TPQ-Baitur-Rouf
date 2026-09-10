@@ -1,0 +1,4 @@
+
+# File .env berisi kredensial nyata dan tidak boleh di-commit.
+# Salin .env.example menjadi .env lalu sesuaikan.
+.env
